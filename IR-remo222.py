@@ -30,7 +30,7 @@ T1_TRANS_START = 0x59  # bus-write(ADR,cmd,1)
 
 def get_smbus():
     # for RPI version 1, use "bus = smbus.SMBus(0)"
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     return bus
 
 
